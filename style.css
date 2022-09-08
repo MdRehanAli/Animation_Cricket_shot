@@ -2,13 +2,31 @@ body {
     background-color: black;
 }
 
+img {
+    width: 320px;
+}
+
 .bat {
     margin-left: 100px;
     transition: transform .2s ease-in;
 }
 
-img {
-    width: 320px;
+
+.field {
+    border: 2px solid gray;
+    cursor: grabbing;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: radial-gradient(red, red, red, red, red, white, white, white);
+    position: relative;
+    left: 585px;
+    transition: transform 1s ease-out .3s;
+    
+
 }
 
 .field:hover .bat {
@@ -16,17 +34,6 @@ img {
     transform-origin: top right;
 }
 
-
-.field {
-
-    border: 2px solid red;
-}
-
-.ball {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-image: radial-gradient(red, red, red, red, white, white);
-    position: relative;
-    left: 585px;
+.field:hover .ball {
+    transform: translate(900px, -400px);
 }
