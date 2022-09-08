@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+.bat {
+    margin-left: 100px;
+    transition: transform .2s ease-in;
+}
+
+img {
+    width: 320px;
+}
+
+.field:hover .bat {
+    transform: rotate(-65deg);
+    transform-origin: top right;
+}
+
+
+.field {
+
+    border: 2px solid red;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: radial-gradient(red, red, red, red, white, white);
+    position: relative;
+    left: 585px;
+}
